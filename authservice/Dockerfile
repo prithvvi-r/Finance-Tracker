@@ -3,7 +3,7 @@ FROM --platform=linux/amd64 amazoncorretto:21
 
 WORKDIR /app
 
-# Copy the JAR file from the host to the container
+# Copy the JAR file from the host to the container-> app/build/libs..
 COPY app/build/libs/app.jar /app/app.jar
 
 # Expose the port that your Java service listens on
